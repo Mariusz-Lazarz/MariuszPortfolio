@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .navbar {
@@ -14,7 +15,7 @@
   gap: 15px;
 }
 
-.navbar > p {
+.navbar > a {
   position: relative;
   color: white;
   opacity: 0.7;
@@ -22,9 +23,10 @@
   font-weight: 700;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
-.navbar > p::after {
+.navbar > a::after {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -36,10 +38,14 @@
   transition: width 0.3s ease;
 }
 
-.navbar > p:hover {
+.navbar > a:hover {
   opacity: 1;
 }
 
-.navbar > p:hover::after {
+.navbar > a:hover::after {
   width: 110%;
+}
+
+.navbar > a.active {
+  color: blue;
 }

@@ -2,36 +2,39 @@ import styles from "./Title.module.css";
 
 const Title = () => {
   return (
-    <h1 className={`${styles.title} ${styles.bouncingLetters}`}>
-      {Array.from("Hi !").map((char, index) =>
-        char === " " ? (
-          <span key={index} style={{ whiteSpace: "pre" }}>
+    <h1 className={styles.title}>
+      <span>
+        <span className={styles.bouncingLetters}>
+          {Array.from("Hi").map((char, index) => (
+            <span
+              key={index}
+              style={{ whiteSpace: char === " " ? "pre" : "normal" }}
+            >
+              {char}
+            </span>
+          ))}
+        </span>
+        <span className={styles.waveIcon}>👋</span>
+      </span>
+      <div className={styles.bouncingLetters}>
+        {Array.from("I'm Mariusz").map((char, index) => (
+          <span
+            key={index}
+            style={{ whiteSpace: char === " " ? "pre" : "normal" }}
+          >
             {char}
           </span>
-        ) : (
-          <span key={index}>{char}</span>
-        )
-      )}
-      <br />
-      {Array.from("I'm Mariusz").map((char, index) =>
-        char === " " ? (
-          <span key={index} style={{ whiteSpace: "pre" }}>
+        ))}
+        <br />
+        {Array.from("Software Developer").map((char, index) => (
+          <span
+            key={index}
+            style={{ whiteSpace: char === " " ? "pre" : "normal" }}
+          >
             {char}
           </span>
-        ) : (
-          <span key={index}>{char}</span>
-        )
-      )}
-      <br />
-      {Array.from("Software Developer").map((char, index) =>
-        char === " " ? (
-          <span key={index} style={{ whiteSpace: "pre" }}>
-            {char}
-          </span>
-        ) : (
-          <span key={index}>{char}</span>
-        )
-      )}
+        ))}
+      </div>
     </h1>
   );
 };

@@ -20,24 +20,34 @@
 }
 
 @keyframes bounce {
-  20%,
-  50%,
-  80%,
-  to {
+  20%, 50%, 80%, to {
     transform: scale(1, 1);
   }
-
-  40%,
-  45% {
+  40%, 45% {
     transform: scale(1.75, 0.65);
   }
-
   70% {
     transform: scale(1.25, 0.75);
   }
-
   90% {
     transform: scale(1.15, 0.85);
+  }
+}
+
+.waveIcon {
+  display: inline-block;
+  animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  20%, 60% {
+    transform: rotate(-15deg);
+  }
+  40%, 80% {
+    transform: rotate(15deg);
   }
 }
 
