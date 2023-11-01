@@ -1,6 +1,29 @@
+import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 
-const Navbar = ({ activeSection }) => {
+const Navbar = () => {
+  const [activeSection, setActiveSection] = useState("");
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    document.querySelectorAll("div[id]").forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <>
       <header className={styles.header}>

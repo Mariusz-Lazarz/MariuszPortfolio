@@ -1,0 +1,40 @@
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(71, 71, 71, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(71, 71, 71, 0.3);
+  width: 80px;
+  height: 80px;
+  flex: 0 0 auto;
+  padding: 10px;
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+
+.skill p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.skill.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
