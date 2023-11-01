@@ -2,7 +2,7 @@ import styles from "./MainSection.module.css";
 import Title from "./Title";
 import ResumeBtn from "./ResumeBtn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 const MainSection = () => {
   return (
@@ -20,6 +20,14 @@ const MainSection = () => {
               className={styles.socialLink}
             >
               <FontAwesomeIcon icon={faGithub} size="2xl" color="white" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mariusz-%C5%82azarz-447299217/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} size="2xl" color="white" />
             </a>
           </div>
         </div>
