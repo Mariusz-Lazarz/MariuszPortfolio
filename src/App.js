@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/About";
+import Copyright from "./components/Copyright";
 import MainSection from "./components/MainSection";
 import Navbar from "./components/Navbar";
 import Work from "./components/Work";
@@ -17,6 +18,7 @@ function App() {
       <div id="work">
         <Work />
       </div>
+      <Copyright />
     </>
   );
 }
