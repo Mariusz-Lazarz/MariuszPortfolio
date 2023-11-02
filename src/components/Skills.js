@@ -23,12 +23,13 @@ const Skills = () => {
     () => [
       { icon: faJs, name: "JavaScript" },
       { icon: faNodeJs, name: "NodeJs" },
-      { icon: faNpm, name: "NPM" },
+
       { icon: faReact, name: "React" },
       { icon: faHtml5, name: "HTML" },
       { icon: faCss3Alt, name: "CSS" },
       { icon: faBootstrap, name: "Bootstrap" },
       { icon: faGithub, name: "Github" },
+      { icon: faNpm, name: "NPM" },
       { icon: faDocker, name: "Docker" },
       { icon: faLinux, name: "Linux" },
       { icon: faJenkins, name: "Jenkins" },
@@ -58,7 +59,7 @@ const Skills = () => {
             }
           });
         },
-        { threshold: 0.5 }
+        { threshold: 0.65 }
       );
 
       observer.observe(skillsContainerRef.current);

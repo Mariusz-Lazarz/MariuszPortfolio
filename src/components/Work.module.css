@@ -1,0 +1,119 @@
+.section {
+  background-color: black;
+  color: white;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.container > div {
+  flex: 1;
+}
+
+.projectImage {
+  display: flex;
+  justify-content: center;
+}
+
+.projectDetails {
+  padding: 20px;
+}
+
+.projectDetails > * {
+  text-align: center;
+}
+
+.image {
+  width: 700px;
+  height: 400px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  opacity: 0.8;
+}
+
+.workTitle {
+  text-align: center;
+  font-size: 60px;
+  position: relative;
+}
+
+.projectTitle {
+  font-size: 40px;
+}
+
+.projectDesc {
+  font-size: 20px;
+}
+
+.softCircle {
+  transform-origin: center center;
+  background-image: linear-gradient(to right top, #ff0000, #800080, #0000ff);
+  position: absolute;
+  left: 50%;
+  border-radius: 20px;
+  transform: skewY(15deg) translate(-50%, -50%) scale(0.7) translateZ(0);
+  width: 900px;
+  height: 600px;
+  filter: blur(100px);
+  opacity: 0.4;
+  top: 300%;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.softCircle:hover {
+  transform: skewY(15deg) translate(-50%, -50%) scale(0.85) translateZ(0);
+}
+
+.workTitleContainer {
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+  align-items: center;
+  gap: 10px;
+}
+
+.github {
+  position: relative;
+  opacity: 0.7;
+  text-decoration: none;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    top: 0;
+  }
+  40% {
+    top: -30px;
+  }
+  60% {
+    top: -15px;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .container {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  .container.reverse {
+    padding: 20px;
+    flex-direction: column-reverse;
+  }
+}

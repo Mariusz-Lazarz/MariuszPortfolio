@@ -40,6 +40,12 @@ const Navbar = () => {
           >
             About
           </a>
+          <a
+            href="#work"
+            className={activeSection === "work" ? styles.active : ""}
+          >
+            Work
+          </a>
         </nav>
       </header>
     </>
