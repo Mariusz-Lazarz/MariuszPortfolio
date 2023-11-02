@@ -5,6 +5,9 @@ import Skills from "./Skills";
 const About = () => {
   return (
     <section className={styles.section}>
+      <h1 className={styles.skillsTitle}>
+        About me and my skills, more can be found in CV.
+      </h1>
       <div className={styles.container}>
         <div className={styles.info}>
           <div className={styles.softCircle}></div>
@@ -32,7 +35,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <h1 className={styles.skillsTitle}>My skills & more can be found in my CV</h1>
+
       <Skills />
     </section>
   );

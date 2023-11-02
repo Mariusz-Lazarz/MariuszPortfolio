@@ -15,7 +15,6 @@
   align-items: center;
   flex-direction: row;
   gap: 30px;
-  padding: 100px;
 }
 
 .container > div {
@@ -27,10 +26,13 @@
 }
 
 .about {
+  max-width: 800px;
+  text-align: center;
   font-size: 24px;
 }
 
 .skillsTitle {
+  font-size: 40px;
   color: white;
   text-align: center;
 }
@@ -48,6 +50,7 @@
   width: fit-content;
   border-radius: 50%;
   padding: 3px;
+  z-index: 2;
 
   background-image: linear-gradient(
     to right,
@@ -72,14 +75,14 @@
   transform-origin: center center;
   background-image: linear-gradient(to right top, #ff0000, #800080, #0000ff);
   position: absolute;
-  left: 50%;
+  left: 150%;
   border-radius: 20px;
   transform: skewY(15deg) translate(-50%, -50%) scale(0.7) translateZ(0);
   width: 900px;
   height: 600px;
   filter: blur(100px);
   opacity: 0.4;
-  top: 100%;
+  top: 80%;
   z-index: 1;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
@@ -102,12 +105,17 @@
     height: auto;
   }
   .about {
-    font-size: 12px;
+    font-size: 18px;
+    text-align: center;
     text-wrap: balance;
   }
   .profileImg {
     width: 200px;
     border-radius: 50%;
     display: block;
+  }
+  .softCircle {
+    width: 100%;
+    height: 100%;
   }
 }
