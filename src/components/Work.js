@@ -6,14 +6,14 @@ const Work = () => {
   return (
     <section className={styles.section}>
       <h1 className={styles.workTitle}>
-        Check my the best projects for more visit my{" "}
+        Checkout my best projects, and for more visit my{" "}
         <a
           href="https://github.com/Mariusz-Lazarz"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.github}
         >
-          Github
+          Github.
         </a>
       </h1>
       <div className={styles.container}>
