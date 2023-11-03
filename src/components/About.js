@@ -6,7 +6,8 @@ const About = () => {
   return (
     <section className={styles.section}>
       <h1 className={styles.skillsTitle}>
-        About me and my skills, more can be found in CV.
+        Discover my skills below, and for more, see my{" "}
+        <a href="src\cv\Mariusz CV-1.pdf" download>resume.</a>
       </h1>
       <div className={styles.container}>
         <div className={styles.info}>

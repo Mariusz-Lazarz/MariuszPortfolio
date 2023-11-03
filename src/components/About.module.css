@@ -32,9 +32,13 @@
 }
 
 .skillsTitle {
-  font-size: 40px;
+  font-size: 60px;
   color: white;
   text-align: center;
+}
+
+.skillsTitle a {
+  text-decoration: none;
 }
 
 @keyframes rotateGradient {

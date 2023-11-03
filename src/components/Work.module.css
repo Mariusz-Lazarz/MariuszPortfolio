@@ -176,7 +176,7 @@
   letter-spacing: 2px;
   cursor: pointer;
   text-transform: uppercase;
-  z-index: 999;
+  z-index: 100;
 }
 
 .glassButton:hover {

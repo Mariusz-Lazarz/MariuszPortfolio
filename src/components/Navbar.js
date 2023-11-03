@@ -46,6 +46,12 @@ const Navbar = () => {
           >
             Work
           </a>
+          <a
+            href="#contact"
+            className={activeSection === "contact" ? styles.active : ""}
+          >
+            Contact
+          </a>
         </nav>
       </header>
     </>
