@@ -15,6 +15,8 @@
 .form {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 10;
 }
 
 .formFields {
@@ -43,14 +45,54 @@
   color: white;
 }
 
+.formFields > *:focus {
+  border-color: #db34a3;
+  border-width: 2px;
+  outline: none;
+}
+
 .formFields > textarea {
   resize: none;
 }
 
-.submitBtn{
-    margin-left: -1.7%;
-    align-self: flex-start;
-    width: 30%;
-    cursor: pointer;
+.submitBtn {
+  margin-left: -1.7%;
+  align-self: flex-start;
+  width: 30%;
+  cursor: pointer;
 }
 
+.submitBtn:focus {
+  border: none;
+}
+
+.thankyouMessage {
+  text-align: center;
+  color: green;
+  font-size: 22px;
+}
+
+.softCircle {
+  transform-origin: center center;
+  background-image: linear-gradient(to right top, #ff0000, #800080, #0000ff);
+  position: absolute;
+  left: 50%;
+  border-radius: 20px;
+  transform: skewY(15deg) translate(-50%, -50%) scale(0.7) translateZ(0);
+  width: 900px;
+  height: 600px;
+  filter: blur(100px);
+  opacity: 0.3;
+  top: 70%;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+@media (max-width: 1400px) {
+  .softCircle {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 50%;
+  }
+}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
+  const [thankyouMessage, setThankyouMessage] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,12 +25,22 @@ const Footer = () => {
       email: "",
       text: "",
     });
+    setThankyouMessage(true);
+    setTimeout(() => {
+      setThankyouMessage(false);
+    }, 2000);
   };
 
   return (
     <footer className={styles.footerContainer}>
-      <h1 className={styles.footerTitle}>Let's stay in touch!</h1>
+      <h1 className={styles.footerTitle}>Let's stay in touch 🤝!</h1>
+      {thankyouMessage && (
+        <p className={styles.thankyouMessage}>
+          Thanks for reaching out! I'll get back to you soon.
+        </p>
+      )}
       <form className={styles.form} onSubmit={handleSubmit}>
+        <div className={styles.softCircle}></div>
         <div className={styles.formFields}>
           <input
             type="text"
