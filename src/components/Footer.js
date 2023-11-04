@@ -17,19 +17,19 @@ const Footer = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    setFormData({
-      name: "",
-      email: "",
-      text: "",
-    });
-    setThankyouMessage(true);
-    setTimeout(() => {
-      setThankyouMessage(false);
-    }, 2000);
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(formData);
+  //   setFormData({
+  //     name: "",
+  //     email: "",
+  //     text: "",
+  //   });
+  //   setThankyouMessage(true);
+  //   setTimeout(() => {
+  //     setThankyouMessage(false);
+  //   }, 2000);
+  // };
 
   return (
     <footer className={styles.footerContainer}>
@@ -39,7 +39,7 @@ const Footer = () => {
           Thanks for reaching out! I'll get back to you soon.
         </p>
       )}
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={styles.form} name="contact" netlify>
         <div className={styles.softCircle}></div>
         <div className={styles.formFields}>
           <input
