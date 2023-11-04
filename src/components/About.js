@@ -7,7 +7,7 @@ const About = () => {
     <section className={styles.section}>
       <h1 className={styles.skillsTitle}>
         Discover my skills below, and for more, see my{" "}
-        <a href="src/cv/MariuszCV.pdf" download>resume.</a>
+        <a href="public\MariuszCV.pdf" download>resume.</a>
       </h1>
       <div className={styles.container}>
         <div className={styles.info}>
