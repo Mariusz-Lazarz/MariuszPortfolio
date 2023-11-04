@@ -39,13 +39,7 @@ const Footer = () => {
           Thanks for reaching out! I'll get back to you soon.
         </p>
       )} */}
-      <form
-        className={styles.form}
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        action=""
-      >
+      <form className={styles.form} name="contact" netlify>
         <div className={styles.softCircle}></div>
         <div className={styles.formFields}>
           <input
