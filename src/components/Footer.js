@@ -6,7 +6,7 @@ const Footer = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    text: "",
+    message: "",
   });
 
   const inputValueChange = (e) => {
@@ -23,7 +23,7 @@ const Footer = () => {
   //   setFormData({
   //     name: "",
   //     email: "",
-  //     text: "",
+  //     message: "",
   //   });
   //   setThankyouMessage(true);
   //   setTimeout(() => {
@@ -39,12 +39,8 @@ const Footer = () => {
           Thanks for reaching out! I'll get back to you soon.
         </p>
       )} */}
-      <form
-        className={styles.form}
-        name="contact"
-        method="POST"
-        data-netlify="true"
-      >
+      <form className={styles.form} name="contact" method="post">
+        <input type="hidden" name="form-name" value="contact" />
         <div className={styles.softCircle}></div>
         <div className={styles.formFields}>
           <input
@@ -66,11 +62,11 @@ const Footer = () => {
             required
           />
           <textarea
-            id="text"
-            name="text"
+            id="message"
+            name="message"
             placeholder="Enter your message..."
             onChange={inputValueChange}
-            value={formData.text}
+            value={formData.message}
             rows="4"
             cols="50"
             required
