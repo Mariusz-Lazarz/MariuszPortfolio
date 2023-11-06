@@ -23,6 +23,7 @@ function App() {
         <Footer />
       </div>
       <form name="contact" netlify>
+        <input type="hidden" name="form-name" value="contact"/>
         <p>
           <label>
             Name <input type="text" name="name" />
