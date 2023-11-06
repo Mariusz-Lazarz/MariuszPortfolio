@@ -121,17 +121,20 @@
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-  box-shadow: 0 0 5px #eee;
   border-radius: 10px;
   display: block;
   cursor: pointer;
   z-index: 999;
+  outline: none !important;
+  border: none !important;
 }
 
 .codeBtn:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
   color: #fff;
   text-decoration: none;
+  outline: none !important;
+  border: none !important;
 }
 
 .liveBtn {
@@ -149,17 +152,20 @@
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-  box-shadow: 0 0 5px #eee;
   border-radius: 10px;
   display: block;
   cursor: pointer;
   z-index: 999;
+  outline: none !important;
+  border: none !important;
 }
 
 .liveBtn:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+  outline: none !important;
+  border: none !important;
 }
 
 .glassButton {
@@ -214,5 +220,8 @@
   .softCircle {
     width: 100%;
     height: 100%;
+  }
+  .workTitle {
+    font-size: 40px;
   }
 }

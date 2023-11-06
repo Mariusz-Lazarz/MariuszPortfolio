@@ -26,7 +26,7 @@ const Title = () => {
           </span>
         ))}
         <br />
-        {Array.from("Software Developer").map((char, index) => (
+        {Array.from("Technical Engineer").map((char, index) => (
           <span
             key={index}
             style={{ whiteSpace: char === " " ? "pre" : "normal" }}
