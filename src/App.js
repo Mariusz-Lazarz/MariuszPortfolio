@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import MainSection from "./components/MainSection";
 import Navbar from "./components/Navbar";
 import Work from "./components/Work";
+import Cursor from "./components/Cursor";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Footer />
       </div>
       <Copyright />
+      <Cursor />
     </>
   );
 }
