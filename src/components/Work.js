@@ -17,23 +17,21 @@ const WORK = [
   {
     title: "API for SWAPI",
     desc: "A NodeJs API, designed for a StarWars-themed application, utilizes Express.js. Its primary function is to retrieve information from SWAPI, incorporating a 24-hour caching mechanism via MongoDB. Comprehensive documentation is provided through Swagger, and the entire application undergoes testing with JEST.",
-    img: project2,
-    live: "#",
+    img: project3,
     code: "https://github.com/Mariusz-Lazarz/nodeapi",
     skills: ["NODEJS", "EXPRESSJS", "MONGODB", "JEST", "DOCKER"],
   },
   {
     title: "LolEsports Scraping Bot",
     desc: "A bot designed for scraping data regarding League of Legends matches. The entire application is hosted on an AWS S3 Bucket and makes use of Lambda functions for scheduling periodic data scraping tasks. After scraping, the data is stored in a Realtime database using Firebase.",
-    img: project3,
-    live: "#",
+    img: project4,
     code: "https://github.com/Mariusz-Lazarz/LolScraping",
     skills: ["NODEJS", "PUPPETEER", "AWS S3", "AWS LAMBDA", "FIREBASE"],
   },
   {
     title: "Personal Website",
     desc: "A bot designed for scraping data regarding League of Legends matches. The entire application is hosted on an AWS S3 Bucket and makes use of Lambda functions for scheduling periodic data scraping tasks. After scraping, the data is stored in a Realtime database using Firebase.",
-    img: project4,
+    img: project2,
     live: "https://mariusz-lazarz.github.io",
     code: "https://github.com/Mariusz-Lazarz/mariusz-lazarz.github.io",
     skills: ["JAVASCRIPT", "JQUERY", "SCSS"],
@@ -61,6 +59,7 @@ const Work = () => {
               ? `${styles.container}`
               : `${styles.containerReverse}`
           }
+          key={index}
         >
           <Parallax speed={10}>
             <div className={styles.projectImage}>
@@ -78,9 +77,11 @@ const Work = () => {
                 ))}
               </div>
               <div className={styles.workLinks}>
-                <a href={item.live} target="_blank" rel="noopener noreferrer">
-                  <button className={styles.liveBtn}>Live</button>
-                </a>
+                {item?.live && (
+                  <a href={item.live} target="_blank" rel="noopener noreferrer">
+                    <button className={styles.liveBtn}>Live</button>
+                  </a>
+                )}
                 <a href={item.github} target="_blank" rel="noopener noreferrer">
                   <button className={styles.codeBtn}>Code</button>
                 </a>
