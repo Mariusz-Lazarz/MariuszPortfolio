@@ -45,6 +45,11 @@ const Footer = () => {
         method="post"
         action="https://formsubmit.co/mariusz.lazarz97@gmail.com"
       >
+        <input
+          type="hidden"
+          name="_next"
+          value="https://mariusz-lazarz.netlify.app/"
+        />
         <input type="hidden" name="form-name" value="contact" />
         <div className={styles.softCircle}></div>
         <div className={styles.formFields}>
