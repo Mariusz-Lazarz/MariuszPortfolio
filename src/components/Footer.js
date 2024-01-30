@@ -39,7 +39,12 @@ const Footer = () => {
           Thanks for reaching out! I'll get back to you soon.
         </p>
       )} */}
-      <form className={styles.form} name="contact" method="post">
+      <form
+        className={styles.form}
+        name="contact"
+        method="post"
+        action="https://formsubmit.co/mariusz.lazarz97@gmail.com"
+      >
         <input type="hidden" name="form-name" value="contact" />
         <div className={styles.softCircle}></div>
         <div className={styles.formFields}>
