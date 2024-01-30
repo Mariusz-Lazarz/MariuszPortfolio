@@ -219,9 +219,9 @@
     min-width: 300px;
     width: 90%;
   }
-  .container.reverse {
+  .containerReverse {
     padding: 20px;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .softCircle {
     width: 100%;

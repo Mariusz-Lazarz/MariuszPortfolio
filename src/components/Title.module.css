@@ -54,5 +54,6 @@
 @media (max-width: 768px) {
   .title {
     font-size: 44px;
+    text-align: center;
   }
 }
