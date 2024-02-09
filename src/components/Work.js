@@ -3,9 +3,27 @@ import project1 from "../img/project1.png";
 import project2 from "../img/project2.png";
 import project3 from "../img/project3.webp";
 import project4 from "../img/project4.jpg";
+import buuksy from "../img/buuksy.png";
 import { Parallax } from "react-scroll-parallax";
 
 const WORK = [
+  {
+    title: "Buuksy",
+    desc: "Buuksy is a streamlined appointment booking platform for beauty salons, allowing users to easily select a salon, choose services, pick a worker, and schedule their visit for a specific time and date. With a user-friendly interface, Buuksy offers a hassle-free way to manage beauty appointments, all in one convenient place.",
+    img: buuksy,
+    live: "https://buuksy.netlify.app/",
+    code: "https://github.com/Mariusz-Lazarz/Buuksy_frontend",
+    skills: [
+      "REACT",
+      "NODEJS",
+      "MONGODB",
+      "EXPRESS",
+      "TAILWINDCSS",
+      "NETLIFY",
+      "JWT",
+      "JEST",
+    ],
+  },
   {
     title: "Storly",
     desc: "Storly is a feature-rich e-commerce platform that brings a seamless shopping experience to both buyers and sellers. Explore a world of products at your fingertips, or set up your own storewith ease.",
