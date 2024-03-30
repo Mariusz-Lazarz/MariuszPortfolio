@@ -4,9 +4,27 @@ import project2 from "../img/project2.png";
 import project3 from "../img/project3.webp";
 import project4 from "../img/project4.jpg";
 import buuksy from "../img/buuksy.png";
+import chatwithme from "../img/chatwithanyone.png";
 import { Parallax } from "react-scroll-parallax";
 
 const WORK = [
+  {
+    title: "Chat with me",
+    desc: "Powered by AI, 'Chat with Me' is an innovative chat application that effortlessly bridges language gaps, enabling seamless communication in users' preferred languages. It offers a subscription-based model, with DIAMOND and GOLD tiers, through Stripe, unlocking premium features like unlimited translations and advanced customization. This application exemplifies technical excellence and a commitment to global inclusivity, making it the go-to tool for transcending linguistic barriers worldwide.",
+    img: chatwithme,
+    live: "https://chat-with-me-sepia.vercel.app/",
+    code: "https://github.com/Mariusz-Lazarz/chatWithMe",
+    skills: [
+      "TYPESCRIPT",
+      "NEXTJS",
+      "NEXTAUTH",
+      "SHADCN",
+      "STRIPE",
+      "AI",
+      "FIREBASE",
+      "ZUSTAND",
+    ],
+  },
   {
     title: "Buuksy",
     desc: "Buuksy is a streamlined appointment booking platform for beauty salons, allowing users to easily select a salon, choose services, pick a worker, and schedule their visit for a specific time and date. With a user-friendly interface, Buuksy offers a hassle-free way to manage beauty appointments, all in one convenient place.",

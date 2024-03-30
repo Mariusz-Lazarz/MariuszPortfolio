@@ -12,7 +12,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.1 }
     );
 
     document.querySelectorAll("div[id]").forEach((section) => {
