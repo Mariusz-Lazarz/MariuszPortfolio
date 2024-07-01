@@ -4,6 +4,7 @@ import project2 from "../img/project2.png";
 import project3 from "../img/project3.webp";
 import project4 from "../img/project4.jpg";
 import buuksy from "../img/buuksy.png";
+import storlyv2 from "../img/storlyv2.png";
 import chatwithme from "../img/chatwithanyone.png";
 import { Parallax } from "react-scroll-parallax";
 
@@ -23,6 +24,22 @@ const WORK = [
       "AI",
       "FIREBASE",
       "ZUSTAND",
+    ],
+  },
+  {
+    title: "Storlyv2",
+    desc: "Storlyv2 is a comprehensive ecommerce platform featuring an impressive user interface and real-time data fetching from a database using URL-stored parameters. It includes Next.js authentication with JWT tokens to manage user roles and access paths. The application fully integrates Stripe for payment processing, supports discount coupons, and offers a bookmarking functionality for favorite products.",
+    img: storlyv2,
+    live: "https://storlyv2.vercel.app/",
+    code: "https://github.com/Mariusz-Lazarz/Storlyv2",
+    skills: [
+      "TYPESCRIPT",
+      "NEXTJS",
+      "NEXTAUTH",
+      "SHADCN",
+      "STRIPE",
+      "PRISMA",
+      "TAILWINDCSS",
     ],
   },
   {
