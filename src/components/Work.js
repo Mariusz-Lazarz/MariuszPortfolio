@@ -40,6 +40,7 @@ const WORK = [
       "STRIPE",
       "PRISMA",
       "TAILWINDCSS",
+      "VERCEL"
     ],
   },
   {
