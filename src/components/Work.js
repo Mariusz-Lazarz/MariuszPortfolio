@@ -3,16 +3,16 @@ import project1 from "../img/project1.png";
 import project2 from "../img/project2.png";
 import project3 from "../img/project3.webp";
 import project4 from "../img/project4.jpg";
-import buuksy from "../img/buuksy.png";
-import storlyv2 from "../img/storlyv2.png";
-import chatwithme from "../img/chatwithanyone.png";
+import buuksy from "../img/buuksymockup.png";
 import { Parallax } from "react-scroll-parallax";
+import storlyv2mockup from "../img/storlymockup.png";
+import chatwithmemockup from "../img/chatmockup.png";
 
 const WORK = [
   {
     title: "Chat with me",
     desc: "Powered by AI, 'Chat with Me' is an innovative chat application that effortlessly bridges language gaps, enabling seamless communication in users' preferred languages. It offers a subscription-based model, with DIAMOND and GOLD tiers, through Stripe, unlocking premium features like unlimited translations and advanced customization. This application exemplifies technical excellence and a commitment to global inclusivity, making it the go-to tool for transcending linguistic barriers worldwide.",
-    img: chatwithme,
+    img: chatwithmemockup,
     live: "https://chat-with-me-sepia.vercel.app/",
     code: "https://github.com/Mariusz-Lazarz/chatWithMe",
     skills: [
@@ -29,7 +29,7 @@ const WORK = [
   {
     title: "Storlyv2",
     desc: "Storlyv2 is a comprehensive ecommerce platform featuring an impressive user interface and real-time data fetching from a database using URL-stored parameters. It includes Next.js authentication with JWT tokens to manage user roles and access paths. The application fully integrates Stripe for payment processing, supports discount coupons, and offers a bookmarking functionality for favorite products.",
-    img: storlyv2,
+    img: storlyv2mockup,
     live: "https://storlyv2.vercel.app/",
     code: "https://github.com/Mariusz-Lazarz/Storlyv2",
     skills: [
@@ -40,7 +40,7 @@ const WORK = [
       "STRIPE",
       "PRISMA",
       "TAILWINDCSS",
-      "VERCEL"
+      "VERCEL",
     ],
   },
   {
@@ -136,7 +136,7 @@ const Work = () => {
                     <button className={styles.liveBtn}>Live</button>
                   </a>
                 )}
-                <a href={item.github} target="_blank" rel="noopener noreferrer">
+                <a href={item.code} target="_blank" rel="noopener noreferrer">
                   <button className={styles.codeBtn}>Code</button>
                 </a>
               </div>
