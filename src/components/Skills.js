@@ -11,7 +11,6 @@ import {
   faGithub,
   faDocker,
   faLinux,
-  faJenkins,
   faAws,
 } from "@fortawesome/free-brands-svg-icons";
 import styles from "./Skills.module.css";
@@ -33,7 +32,6 @@ const Skills = () => {
       { icon: faNpm, name: "NPM" },
       { icon: faDocker, name: "Docker" },
       { icon: faLinux, name: "Linux" },
-      { icon: faJenkins, name: "Jenkins" },
     ],
     []
   );

@@ -1,9 +1,7 @@
 import styles from "./Work.module.css";
 import project1 from "../img/project1.png";
-import project2 from "../img/project2.png";
 import project3 from "../img/project3.webp";
 import project4 from "../img/project4.jpg";
-import buuksy from "../img/buuksymockup.png";
 import { Parallax } from "react-scroll-parallax";
 import storlyv2mockup from "../img/storlymockup.png";
 import chatwithmemockup from "../img/chatmockup.png";
@@ -44,21 +42,11 @@ const WORK = [
     ],
   },
   {
-    title: "Buuksy",
-    desc: "Buuksy is a streamlined appointment booking platform for beauty salons, allowing users to easily select a salon, choose services, pick a worker, and schedule their visit for a specific time and date. With a user-friendly interface, Buuksy offers a hassle-free way to manage beauty appointments, all in one convenient place.",
-    img: buuksy,
-    live: "https://buuksy.netlify.app/",
-    code: "https://github.com/Mariusz-Lazarz/Buuksy_frontend",
-    skills: [
-      "REACT",
-      "NODEJS",
-      "MONGODB",
-      "EXPRESS",
-      "TAILWINDCSS",
-      "NETLIFY",
-      "JWT",
-      "JEST",
-    ],
+    title: "Piwik PRO AI Knowledge Bot",
+    desc: "I developed a Piwik PRO Help Center bot powered by Generative AI (ChatGPT API) to provide users with precise and context-aware assistance. The bot utilizes Qdrant for vector embeddings to enhance retrieval accuracy, reranks results for relevance, and maintains chat history to ensure continuity across interactions. This solution effectively streamlines user support and delivers accurate answers in real time.",
+    img: project4,
+    code: "https://github.com/Mariusz-Lazarz/AI-Knowledge-BOT-PPHC",
+    skills: ["PYTHON", "OPENAI", "BEAUTIFULSOUP", "QDRANT"],
   },
   {
     title: "Storly",
@@ -74,21 +62,6 @@ const WORK = [
     img: project3,
     code: "https://github.com/Mariusz-Lazarz/nodeapi",
     skills: ["NODEJS", "EXPRESSJS", "MONGODB", "JEST", "DOCKER"],
-  },
-  {
-    title: "LolEsports Scraping Bot",
-    desc: "A bot designed for scraping data regarding League of Legends matches. The entire application is hosted on an AWS S3 Bucket and makes use of Lambda functions for scheduling periodic data scraping tasks. After scraping, the data is stored in a Realtime database using Firebase.",
-    img: project4,
-    code: "https://github.com/Mariusz-Lazarz/LolScraping",
-    skills: ["NODEJS", "PUPPETEER", "AWS S3", "AWS LAMBDA", "FIREBASE"],
-  },
-  {
-    title: "Personal Website",
-    desc: "A bot designed for scraping data regarding League of Legends matches. The entire application is hosted on an AWS S3 Bucket and makes use of Lambda functions for scheduling periodic data scraping tasks. After scraping, the data is stored in a Realtime database using Firebase.",
-    img: project2,
-    live: "https://mariusz-lazarz.github.io",
-    code: "https://github.com/Mariusz-Lazarz/mariusz-lazarz.github.io",
-    skills: ["JAVASCRIPT", "JQUERY", "SCSS"],
   },
 ];
 
