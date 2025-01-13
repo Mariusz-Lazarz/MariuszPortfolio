@@ -1,10 +1,11 @@
 import styles from "./Work.module.css";
-import project1 from "../img/project1.png";
-import project3 from "../img/project3.webp";
-import project4 from "../img/project4.jpg";
+import project1 from "./img/project1.png";
+import project3 from "./img/project3.webp";
+import project4 from "./img/project4.jpg";
 import { Parallax } from "react-scroll-parallax";
-import storlyv2mockup from "../img/storlymockup.png";
-import chatwithmemockup from "../img/chatmockup.png";
+import storlyv2mockup from "./img/storlymockup.png";
+import chatwithmemockup from "./img/chatmockup.png";
+
 
 const WORK = [
   {

@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import profileImage from "../img/me.jpg";
+import profileImage from "./img/me.jpg";
 import Skills from "./Skills";
 import { Parallax } from "react-scroll-parallax";
 
