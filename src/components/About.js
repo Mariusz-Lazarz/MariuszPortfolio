@@ -17,18 +17,14 @@ const About = () => {
           <div className={styles.info}>
             <div className={styles.softCircle}></div>
             <p className={styles.about}>
-              Proactive Technical Support Engineer boasting 1-2 years of handson
-              experience in the technological domain. I bring to the table
-              proficiency in JavaScript, API integration, and troubleshooting in
-              web development environments. My skill set extends to web
-              analytics, where I shine in deciphering and amplifying digital
-              processes to enhance user experiences and drive operational
-              efficiencies. Eager to pivot into a development role, I bring a
-              reputation for rapid learning, potent communication, and a
-              collaborative ethos that enhances team dynamics and project
-              outcomes. With a steadfast commitment to technical excellence, I
-              am poised to contribute effectively to web development teams and
-              projects
+              Technical Support Engineer with 2+ years of expertise in
+              troubleshooting, process automation (Python/JavaScript), and
+              building AI-powered tools. Proficient in backend development
+              (Node.js, RESTful APIs) and cloud solutions (AWS, Azure).
+              Passionate about solving complex problems through code, generative
+              AI, and scalable systems. Open to roles in technical support or
+              backend engineering, with a strong focus on innovation and skill
+              expansion.
             </p>
           </div>
         </Parallax>

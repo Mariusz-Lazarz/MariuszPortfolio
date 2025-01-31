@@ -6,7 +6,6 @@ import { Parallax } from "react-scroll-parallax";
 import storlyv2mockup from "./img/storlymockup.png";
 import chatwithmemockup from "./img/chatmockup.png";
 
-
 const WORK = [
   {
     title: "Chat with me",
@@ -43,27 +42,27 @@ const WORK = [
     ],
   },
   {
-    title: "Piwik PRO AI Knowledge Bot",
-    desc: "I developed a Piwik PRO Help Center bot powered by Generative AI (ChatGPT API) to provide users with precise and context-aware assistance. The bot utilizes Qdrant for vector embeddings to enhance retrieval accuracy, reranks results for relevance, and maintains chat history to ensure continuity across interactions. This solution effectively streamlines user support and delivers accurate answers in real time.",
+    title: "AI Knowledge Bot",
+    desc: "Developed an AI-powered chatbot that provides real-time, context-aware assistance by leveraging publicly available knowledge from the Piwik PRO Help Center. The bot uses Qdrant for vector search, improving retrieval accuracy, and implements result reranking for relevance. It also maintains chat history for seamless interactions, making user support more efficient.",
     img: project4,
     code: "https://github.com/Mariusz-Lazarz/AI-Knowledge-BOT-PPHC",
     skills: ["PYTHON", "OPENAI", "BEAUTIFULSOUP", "QDRANT"],
   },
-  {
-    title: "Storly",
-    desc: "Storly is a feature-rich e-commerce platform that brings a seamless shopping experience to both buyers and sellers. Explore a world of products at your fingertips, or set up your own storewith ease.",
-    img: project1,
-    live: "https://storly.netlify.app/",
-    code: "https://github.com/Mariusz-Lazarz/Storly",
-    skills: ["REACT", "REDUX", "FIREBASE", "TAILWINDCSS", "NETLIFY"],
-  },
-  {
-    title: "API for SWAPI",
-    desc: "A NodeJs API, designed for a StarWars-themed application, utilizes Express.js. Its primary function is to retrieve information from SWAPI, incorporating a 24-hour caching mechanism via MongoDB. Comprehensive documentation is provided through Swagger, and the entire application undergoes testing with JEST.",
-    img: project3,
-    code: "https://github.com/Mariusz-Lazarz/nodeapi",
-    skills: ["NODEJS", "EXPRESSJS", "MONGODB", "JEST", "DOCKER"],
-  },
+  // {
+  //   title: "Storly",
+  //   desc: "Storly is a feature-rich e-commerce platform that brings a seamless shopping experience to both buyers and sellers. Explore a world of products at your fingertips, or set up your own storewith ease.",
+  //   img: project1,
+  //   live: "https://storly.netlify.app/",
+  //   code: "https://github.com/Mariusz-Lazarz/Storly",
+  //   skills: ["REACT", "REDUX", "FIREBASE", "TAILWINDCSS", "NETLIFY"],
+  // },
+  // {
+  //   title: "API for SWAPI",
+  //   desc: "A NodeJs API, designed for a StarWars-themed application, utilizes Express.js. Its primary function is to retrieve information from SWAPI, incorporating a 24-hour caching mechanism via MongoDB. Comprehensive documentation is provided through Swagger, and the entire application undergoes testing with JEST.",
+  //   img: project3,
+  //   code: "https://github.com/Mariusz-Lazarz/nodeapi",
+  //   skills: ["NODEJS", "EXPRESSJS", "MONGODB", "JEST", "DOCKER"],
+  // },
 ];
 
 const Work = () => {
@@ -123,3 +122,5 @@ const Work = () => {
 };
 
 export default Work;
+
+
