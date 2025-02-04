@@ -4,6 +4,12 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ParallaxProvider } from "react-scroll-parallax";
+import PiwikPro from "@piwikpro/react-piwik-pro";
+
+PiwikPro.initialize(
+  "c3006838-4d84-4d3c-843b-5279b34d4d2d",
+  "https://iluu.piwik.pro"
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

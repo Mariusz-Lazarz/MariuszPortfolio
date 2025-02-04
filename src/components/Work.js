@@ -99,18 +99,24 @@ const Work = () => {
               <h1 className={styles.projectTitle}>{item.title}</h1>
               <p className={styles.projectDesc}>{item.desc}</p>
               <div className={styles.workSkills}>
-                {item.skills.map((skill) => (
-                  <button className={styles.glassButton}>{skill}</button>
+                {item.skills.map((skill, index) => (
+                  <button className={styles.glassButton} key={index}>
+                    {skill}
+                  </button>
                 ))}
               </div>
               <div className={styles.workLinks}>
                 {item?.live && (
                   <a href={item.live} target="_blank" rel="noopener noreferrer">
-                    <button className={styles.liveBtn}>Live</button>
+                    <button className={`${styles.liveBtn} live-button`}>
+                      Live
+                    </button>
                   </a>
                 )}
                 <a href={item.code} target="_blank" rel="noopener noreferrer">
-                  <button className={styles.codeBtn}>Code</button>
+                  <button className={`${styles.codeBtn} code-button`}>
+                    Code
+                  </button>
                 </a>
               </div>
             </div>
@@ -122,5 +128,3 @@ const Work = () => {
 };
 
 export default Work;
-
-

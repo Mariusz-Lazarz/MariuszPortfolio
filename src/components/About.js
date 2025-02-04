@@ -8,7 +8,7 @@ const About = () => {
     <section className={styles.section}>
       <h1 className={styles.skillsTitle}>
         Discover my skills below, and for more, see my{" "}
-        <a href="/mariuszcv.pdf" download>
+        <a className="cv-button" href="/mariuszcv.pdf" download>
           resume.
         </a>
       </h1>
